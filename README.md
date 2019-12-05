@@ -9,7 +9,6 @@ Mylaw Confrence is looking for someone to design a RESTful API for talks at a co
 	- add a talk  
 	- add an attendee  
 	- add an attendee to a talk
-  - real-time chat among members of a talk
 - Design a simple (not necessarily beautiful) user interface with framework/library of your choice to consume the API.
 - Put solution on GitHub/BitBucket or any Git Server  
 - Upload to webserver of choice e.g Heruko, Zeit, Netlify, AWS, or Digital Ocean 
