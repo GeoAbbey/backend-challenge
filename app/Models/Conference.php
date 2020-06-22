@@ -19,4 +19,12 @@ class Conference extends Base
     {
         return $this->belongsToMany(Attendee::class);
     }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function tickets()
+    {
+        return $this->hasMany(Ticket::class);
+    }
 }
