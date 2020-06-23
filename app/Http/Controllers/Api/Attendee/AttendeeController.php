@@ -42,17 +42,6 @@ class AttendeeController extends Controller
     }
 
     /**
-     * @param UpdateRequest $request
-     * @param Attendee $attendee
-     * @return AttendeeResource
-     */
-    public function update(UpdateRequest $request, Attendee $attendee)
-    {
-        (new UpdateService($attendee, $request->all()))->run();
-        return new AttendeeResource(Attendee::findOrFail($attendee->id));
-    }
-
-    /**
      * @param Attendee $attendee
      * @return \Illuminate\Http\JsonResponse
      * @throws \Exception

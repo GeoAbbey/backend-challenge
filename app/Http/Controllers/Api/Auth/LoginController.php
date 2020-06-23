@@ -10,18 +10,25 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
+    protected $guard;
+
+    public function __construct($guard = 'api')
+    {
+        $this->guard = $guard;
+    }
+
     public function login(LoginRequest $request)
     {
         $credentials = ['email' => $request->email, 'password' => $request->password];
-        if(!Auth::attempt($credentials)) {
+        if (! $token = auth()->guard($this->guard)->attempt($credentials)) {
             return $this->invalidCredentials();
         }
-        $user = $request->user();
+        $user = Auth::guard($this->guard)->user();
 
         $user->last_login = Carbon::now();
         $user->save();
 
-        return $this->returnToken($user, $request);
+        return $this->returnToken($token);
     }
 
     /**
@@ -40,20 +47,12 @@ class LoginController extends Controller
      * @param null $request
      * @return \Illuminate\Http\JsonResponse
      */
-    protected function returnToken($user, $request = null)
+    protected function returnToken($token)
     {
-        $tokenResult = $user->createToken('Personal Access Token');
-        $token = $tokenResult->token;
-        if ($request && $request->remember_me) {
-            $token->expires_at = Carbon::now()->addWeeks(1);
-        }
-        $token->save();
         return response()->json([
-            'access_token' => $tokenResult->accessToken,
+            'access_token' => $token,
             'token_type' => 'Bearer',
-            'expires_at' => Carbon::parse(
-                $tokenResult->token->expires_at
-            )->toDateTimeString()
+            'expires_at' => auth($this->guard)->factory()->getTTL() * 60
         ]);
     }
 }

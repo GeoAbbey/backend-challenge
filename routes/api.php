@@ -40,7 +40,11 @@ Route::group(['middleware' => 'apiLogger'], function() {
     Route::group(['prefix' => 'attendees', 'namespace' => 'Api\Attendee'], function() {
         Route::get('/', 'AttendeeController@lists');
         Route::post('/', 'AttendeeController@store');
-        Route::patch('/{attendee}', 'AttendeeController@update');
         Route::delete('/{attendee}', 'AttendeeController@delete');
+
+        Route::post('/auth/login', 'AuthController@login');
+
+        Route::patch('/me', 'MeController@update');
+        Route::get('/me', 'MeController@show');
     });
 });

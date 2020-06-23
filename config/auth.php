@@ -42,8 +42,14 @@ return [
         ],
 
         'api' => [
-            'driver' => 'passport',
+            'driver' => 'jwt',
             'provider' => 'users',
+            'hash' => false,
+        ],
+
+        'attendee' => [
+            'driver' => 'jwt',
+            'provider' => 'attendees',
             'hash' => false,
         ],
     ],
@@ -71,6 +77,11 @@ return [
             'model' => App\Models\User::class,
         ],
 
+        'attendees' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Attendee::class,
+        ],
+
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
@@ -95,6 +106,13 @@ return [
     'passwords' => [
         'users' => [
             'provider' => 'users',
+            'table' => 'password_resets',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+
+        'attendees' => [
+            'provider' => 'attendees',
             'table' => 'password_resets',
             'expire' => 60,
             'throttle' => 60,
