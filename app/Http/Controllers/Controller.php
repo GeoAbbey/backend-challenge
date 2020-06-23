@@ -10,4 +10,15 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    /**
+     * @return \Illuminate\Http\JsonResponse
+     */
+    protected function resourceNotFound()
+    {
+        return response()->json([
+            'status' => 'error',
+            'message' => 'resource not found'
+        ], 404);
+    }
 }
