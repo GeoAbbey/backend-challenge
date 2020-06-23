@@ -14,9 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['prefix' => 'auth'], function() {
-   Route::post('/login', 'Api\Auth\LoginController@login');
-});
+Route::group(['middleware' => 'apiLogger'], function() {
+    Route::group(['prefix' => 'auth'], function() {
+        Route::post('/login', 'Api\Auth\LoginController@login');
+    });
 
-Route::get('/me', 'Api\Me\MeController@me');
-Route::get('/logout', 'Api\Me\MeController@logout');
+    Route::get('/me', 'Api\Me\MeController@me');
+    Route::get('/logout', 'Api\Me\MeController@logout');
+});
