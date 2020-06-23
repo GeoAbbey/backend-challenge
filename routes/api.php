@@ -21,4 +21,11 @@ Route::group(['middleware' => 'apiLogger'], function() {
 
     Route::get('/me', 'Api\Me\MeController@me');
     Route::get('/logout', 'Api\Me\MeController@logout');
+
+    Route::group(['prefix' => 'conferences', 'namespace' => 'Api\Conference'], function() {
+        Route::get('/', 'ConferenceController@lists');
+        Route::post('/', 'ConferenceController@store');
+        Route::patch('/{conference}', 'ConferenceController@update');
+        Route::delete('/{conference}', 'ConferenceController@delete');
+    });
 });

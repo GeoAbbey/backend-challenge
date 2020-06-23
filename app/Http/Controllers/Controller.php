@@ -21,4 +21,12 @@ class Controller extends BaseController
             'message' => 'resource not found'
         ], 404);
     }
+
+    protected function deleteResource()
+    {
+        return response()->json([
+            'status' => 'error',
+            'message' => 'resource deleted successfully'
+        ], 200);
+    }
 }

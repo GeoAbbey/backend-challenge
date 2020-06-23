@@ -2,8 +2,11 @@
 
 namespace App\Models;
 
+use EloquentFilter\Filterable;
+
 class Conference extends Base
 {
+    use Filterable;
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
