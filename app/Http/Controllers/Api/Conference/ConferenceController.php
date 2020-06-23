@@ -7,6 +7,7 @@ use App\Http\Requests\Api\Conference\ListRequest;
 use App\Http\Requests\Api\Conference\StoreRequest;
 use App\Http\Requests\Api\Conference\UpdateRequest;
 use App\Http\Resources\Api\Conference\ConferenceResouce;
+use App\Http\Resources\Api\Talk\TalkResource;
 use App\Models\Conference;
 use App\Services\Conference\StoreService;
 use App\Services\Conference\UpdateService;
@@ -19,7 +20,7 @@ class ConferenceController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth:api')->except('lists');
+        $this->middleware('auth:api')->except(['lists', 'show']);
     }
 
     /**
@@ -30,6 +31,13 @@ class ConferenceController extends Controller
     {
         $conferences = Conference::filter($request->all())->orderBy('created_at', 'desc')->paginate(10);
         return ConferenceResouce::collection($conferences);
+    }
+
+    public function show(Conference $conference)
+    {
+        return (new ConferenceResouce($conference))->additional([
+            'talks' => TalkResource::collection($conference->talks)
+        ]);
     }
 
     /**

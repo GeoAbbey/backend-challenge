@@ -24,6 +24,7 @@ Route::group(['middleware' => 'apiLogger'], function() {
 
     Route::group(['prefix' => 'conferences', 'namespace' => 'Api\Conference'], function() {
         Route::get('/', 'ConferenceController@lists');
+        Route::get('/{conference}', 'ConferenceController@show');
         Route::post('/', 'ConferenceController@store');
         Route::patch('/{conference}', 'ConferenceController@update');
         Route::delete('/{conference}', 'ConferenceController@delete');
