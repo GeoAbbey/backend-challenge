@@ -17,10 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::group(['middleware' => 'apiLogger'], function() {
     Route::group(['prefix' => 'auth'], function() {
         Route::post('/login', 'Api\Auth\LoginController@login');
+        Route::get('/logout', 'Api\Auth\LoginController@logout')->middleware('auth:api');
     });
 
     Route::get('/me', 'Api\Me\MeController@me');
-    Route::get('/logout', 'Api\Me\MeController@logout');
 
     Route::group(['prefix' => 'conferences', 'namespace' => 'Api\Conference'], function() {
         Route::get('/', 'ConferenceController@lists');
@@ -28,6 +28,8 @@ Route::group(['middleware' => 'apiLogger'], function() {
         Route::post('/', 'ConferenceController@store');
         Route::patch('/{conference}', 'ConferenceController@update');
         Route::delete('/{conference}', 'ConferenceController@delete');
+
+        Route::post('/{conference}/tickets', 'TicketController@store');
     });
 
     Route::group(['prefix' => 'speakers', 'namespace' => 'Api\Speaker'], function() {
@@ -43,8 +45,10 @@ Route::group(['middleware' => 'apiLogger'], function() {
         Route::delete('/{attendee}', 'AttendeeController@delete');
 
         Route::post('/auth/login', 'AuthController@login');
+        Route::get('/auth/logout', 'AuthController@logout')->middleware('auth:attendee');
 
         Route::patch('/me', 'MeController@update');
         Route::get('/me', 'MeController@show');
     });
+    Route::get('/attendees/tickets', 'Api\Conference\TicketController@lists');
 });

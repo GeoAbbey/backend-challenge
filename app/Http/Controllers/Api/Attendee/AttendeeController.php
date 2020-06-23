@@ -37,7 +37,8 @@ class AttendeeController extends Controller
      */
     public function store(StoreRequest $request)
     {
-        $attendee = Attendee::create($request->only(['first_name', 'last_name', 'email', 'phone_number', 'address']));
+        $attendee = Attendee::create($request->only(['first_name', 'last_name', 'email', 'phone_number',
+            'address', 'password']));
         return new AttendeeResource($attendee);
     }
 

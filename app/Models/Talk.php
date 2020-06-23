@@ -27,4 +27,12 @@ class Talk extends Base
     {
         return $this->belongsTo(Conference::class);
     }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function attendees()
+    {
+        return $this->belongsToMany(Attendee::class);
+    }
 }

@@ -55,4 +55,13 @@ class LoginController extends Controller
             'expires_at' => auth($this->guard)->factory()->getTTL() * 60
         ]);
     }
+
+    /**
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function logout()
+    {
+        auth()->guard($this->guard)->logout();
+        return response()->json(['message' => 'Successfully logged out']);
+    }
 }

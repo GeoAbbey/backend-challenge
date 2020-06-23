@@ -10,6 +10,8 @@ use Tymon\JWTAuth\Contracts\JWTSubject;
 class Attendee extends Authenticatable implements JWTSubject
 {
     use Filterable, Notifiable;
+
+    protected $guarded = [];
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
@@ -54,5 +56,13 @@ class Attendee extends Authenticatable implements JWTSubject
     public function getJWTCustomClaims()
     {
         return [];
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function talks()
+    {
+        return $this->belongsToMany(Talk::class);
     }
 }

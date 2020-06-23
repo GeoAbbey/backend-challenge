@@ -24,18 +24,4 @@ class MeController extends Controller
     {
         return new MeResource($request->user());
     }
-
-    /**
-     * @param Request $request
-     * @return \Illuminate\Http\JsonResponse
-     */
-    public function logout(Request $request)
-    {
-        $token = $request->user()->token();
-        $token->revoke();
-        return response()->json([
-            'status' => 'success',
-            'message' => 'Logged out successfully'
-        ], 200);
-    }
 }
