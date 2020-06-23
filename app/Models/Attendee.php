@@ -2,8 +2,11 @@
 
 namespace App\Models;
 
+use EloquentFilter\Filterable;
+
 class Attendee extends Base
 {
+    use Filterable;
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08dad5a0-a6e5-462b-bafb-aaa2c05e4dec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/ModelFilters/AttendeeFilter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Attendee/UpdateService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Conference/ConferenceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Conference/ConferenceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Attendee.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Attendee.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,32 +19,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Conference/ConferenceController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="39" column="11" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Resources/Api/Talk/TalkResource.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-              <folding>
-                <element signature="e#47#98#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="26" column="62" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
+            <state relative-caret-position="177">
+              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Attendee/AttendeeController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="48" column="30" lean-forward="true" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/Api/Attendee/UpdateRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+              <folding>
+                <element signature="e#50#93#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,17 +57,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Models/Base.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_06_22_225903_create_speakers_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_06_22_230334_create_talk_assets_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_06_22_231057_create_conferences_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_06_22_231504_create_attendees_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_06_22_232806_create_attendee_talk_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_06_22_221057_create_conferences_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_06_22_225533_create_talks_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_06_22_231834_create_attendee_conference_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_06_22_234629_create_tickets_table.php" />
-        <option value="$PROJECT_DIR$/app/Models/Attendee.php" />
         <option value="$PROJECT_DIR$/app/Models/Ticket.php" />
         <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/factories/UserFactory.php" />
@@ -103,9 +97,17 @@
         <option value="$PROJECT_DIR$/app/Services/Conference/StoreService.php" />
         <option value="$PROJECT_DIR$/app/Services/Talk/UpdateService.php" />
         <option value="$PROJECT_DIR$/app/Services/Conference/UpdateService.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Conference/ConferenceController.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/Api/Talk/TalkResource.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Conference/ConferenceController.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Models/Attendee.php" />
+        <option value="$PROJECT_DIR$/app/ModelFilters/AttendeeFilter.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/Api/Attendee/AttendeeResource.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/Api/Attendee/ListRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/Api/Attendee/StoreRequest.php" />
+        <option value="$PROJECT_DIR$/app/Services/Attendee/UpdateService.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Attendee/AttendeeController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/Api/Attendee/UpdateRequest.php" />
       </list>
     </option>
   </component>
@@ -290,7 +292,20 @@
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
               <item name="Api" type="462c0819:PsiDirectoryNode" />
-              <item name="Conference" type="462c0819:PsiDirectoryNode" />
+              <item name="Attendee" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="conference-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="conference-app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="conference-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="conference-app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Services" type="462c0819:PsiDirectoryNode" />
+              <item name="Speaker" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -300,11 +315,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="api&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/routes/api.php&#10;Speaker&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Models/Speaker.php&#10;Confere&#9;null&#9;null&#10;AuthSer&#9;null&#9;null&#10;User&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Models/User.php" />
+    <property name="SearchEverywhereHistoryKey" value="Atten&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Models/Attendee.php&#10;api&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/routes/api.php&#10;Speaker&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Models/Speaker.php&#10;Confere&#9;null&#9;null&#10;AuthSer&#9;null&#9;null&#10;User&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Models/User.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
@@ -334,12 +350,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592865891473</updated>
-      <workItem from="1592865892694" duration="19445000" />
+      <workItem from="1592865892694" duration="21920000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19445000" />
+    <option name="totallyTimeSpent" value="21920000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="852" extended-state="6" />
@@ -374,62 +390,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_06_22_232806_create_attendee_talk_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="89" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_06_22_231504_create_attendees_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_06_22_230103_create_speaker_talk_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_06_22_230334_create_talk_assets_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_06_22_234629_create_tickets_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="24" column="101" selection-start-line="24" selection-start-column="101" selection-end-line="24" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Attendee.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Ticket.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_06_22_231834_create_attendee_conference_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="69" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/factories/UserFactory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -634,13 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Services/Speaker/UpdateService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/Api/Speaker/StoreRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
@@ -746,10 +699,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Conference/ConferenceController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="26" column="62" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
+        <state relative-caret-position="330">
+          <caret line="31" column="90" lean-forward="true" selection-start-line="31" selection-start-column="90" selection-end-line="31" selection-end-column="90" />
         </state>
       </provider>
     </entry>
@@ -763,10 +716,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Conference/ConferenceController.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/Attendee.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="39" column="11" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+        <state relative-caret-position="120">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/ModelFilters/AttendeeFilter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Api/Attendee/AttendeeResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Api/Attendee/ListRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Api/Attendee/StoreRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/Attendee/UpdateService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/Speaker/UpdateService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Attendee/AttendeeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="48" column="30" lean-forward="true" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Api/Attendee/UpdateRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+          <folding>
+            <element signature="e#50#93#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
