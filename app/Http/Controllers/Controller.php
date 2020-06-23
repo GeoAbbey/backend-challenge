@@ -25,7 +25,7 @@ class Controller extends BaseController
     protected function deleteResource()
     {
         return response()->json([
-            'status' => 'error',
+            'status' => 'success',
             'message' => 'resource deleted successfully'
         ], 200);
     }

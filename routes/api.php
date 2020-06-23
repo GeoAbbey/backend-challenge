@@ -28,4 +28,11 @@ Route::group(['middleware' => 'apiLogger'], function() {
         Route::patch('/{conference}', 'ConferenceController@update');
         Route::delete('/{conference}', 'ConferenceController@delete');
     });
+
+    Route::group(['prefix' => 'speakers', 'namespace' => 'Api\Speaker'], function() {
+        Route::get('/', 'SpeakerController@lists');
+        Route::post('/', 'SpeakerController@store');
+        Route::patch('/{speaker}', 'SpeakerController@update');
+        Route::delete('/{speaker}', 'SpeakerController@delete');
+    });
 });
