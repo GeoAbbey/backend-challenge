@@ -25,5 +25,8 @@ Route::post('/attendee/add', ['uses' => 'AttendeesController@create']);
 //add attendee to talk
 Route::post('/talk/attendee/add', ['uses' => 'AttendeesController@add']);
 
-Route::delete('/talk/delete/{talk_id}', ['uses' => 'TalksController@delete']);
+Route::delete('/talk/delete/{talk_id}', ['uses' => 'TalksController@delete']); //delete talk
+
+//show register page
+Route::get('/register', ['uses' => 'RegisterController@show']);
 
