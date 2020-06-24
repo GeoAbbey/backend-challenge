@@ -29,7 +29,7 @@ class AttendeesController extends Controller
                 $saved = User::firstOrCreate(['email' => $request->email, 'name' => $request->name, 'password' => $password]); //first check whether email and username has been created before saving
 
                 if ( $saved ) {
-                    return redirect('/login');
+                    return redirect('/');
                 }else{
                     $error = 'User not saved';
                     return view('register')->with(['issue' => $error, 'username' => $request->name, 'email' => $request->email]);
