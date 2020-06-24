@@ -23,7 +23,7 @@ Route::post('/talk/add', ['uses' => 'TalksController@add']);
 Route::post('/attendee/add', ['uses' => 'AttendeesController@create']);
 
 //add attendee to talk
-Route::post('/talk/attendee/add/:attendee_id', ['uses' => 'AttendeesController@add']);
+Route::post('/talk/attendee/add', ['uses' => 'AttendeesController@add']);
 
-Route::delete('/talk/delete', ['uses' => 'TalksController@delete']);
+Route::delete('/talk/delete/{talk_id}', ['uses' => 'TalksController@delete']);
 

@@ -30,4 +30,14 @@ class TalksController extends Controller
         }
     }
 
+    public function delete($id) 
+    {
+        $delete = Talk::destroy($id);
+        if ($delete){
+            return response($content =['message' => 'Talk deleted successfully', 'data' => [], 'response'=> 'error'], 200);
+        }else{
+            return response($content =['message' => 'Bad request', 'data' => $php_errormsg, 'response'=> 'error'], 404);
+        }
+    }
+
 }
