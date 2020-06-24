@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('login');
 });
-
+//show talk
+Route::get('/talk/add', ['uses' => 'TalksController@show']);
 //add talk
 Route::post('/talk/add', ['uses' => 'TalksController@add']);
 

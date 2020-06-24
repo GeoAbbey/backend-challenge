@@ -8,6 +8,12 @@ use App\Talk;
 class TalksController extends Controller
 {
     //
+    public function show()
+    {
+        return view('talk');
+    }
+
+
     public function add(Request $request)
     {
         //validate
