@@ -14,7 +14,7 @@ class AttendeesController extends Controller
     {
         validator(
             [
-                $request->name => 'required | unique',
+                $request->username => 'required | unique',
                 $request->email =>    'required | unique | email',
                 $request->password => 'required',
                 $request->_token => 'required'
@@ -26,17 +26,17 @@ class AttendeesController extends Controller
             if ( $request->password === $request->password2){
                 $password = password_hash($request->password, CRYPT_BLOWFISH); //hash password
 
-                $saved = User::firstOrCreate(['email' => $request->email, 'name' => $request->name, 'password' => $password]); //first check whether email and username has been created before saving
+                $saved = User::firstOrCreate(['email' => $request->email, 'username' => $request->username, 'password' => $password]); //first check whether email and username has been created before saving
 
                 if ( $saved ) {
                     return redirect('/');
                 }else{
                     $error = 'User not saved';
-                    return view('register')->with(['issue' => $error, 'username' => $request->name, 'email' => $request->email]);
+                    return view('register')->with(['issue' => $error, 'username' => $request->username, 'email' => $request->email]);
                 }
             }else{
                 $error = 'Password does not match';
-                return view('register')->with(['issue' => $error, 'username' => $request->name, 'email' => $request->email]);
+                return view('register')->with(['issue' => $error, 'username' => $request->username, 'email' => $request->email]);
             }
 
     }
