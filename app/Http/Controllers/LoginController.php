@@ -31,7 +31,7 @@ class LoginController extends Controller
                 return redirect('/dashboard');
             }else{
                 $error = 'Password is incorrect';
-                return view('register')->with(['issue' => $error, 'username' => $request->username]);
+                return view('login')->with(['issue' => $error, 'username' => $request->username]);
             }
         }
     }
