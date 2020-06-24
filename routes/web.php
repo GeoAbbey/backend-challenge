@@ -20,6 +20,7 @@ Route::get('/', function () {
 //add talk
 Route::post('/talk/add', ['uses' => 'TalksController@add']);
 
+//create attendee
 Route::post('/attendee/add', ['uses' => 'AttendeesController@create']);
 
 //add attendee to talk
