@@ -16,3 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//add talk
+Route::post('/talk/add', ['uses' => 'TalksController@add']);
+
+Route::post('/attendee/add', ['uses' => 'AttendeesController@create']);
+
+//add attendee to talk
+Route::post('/talk/attendee/add/:attendee_id', ['uses' => 'AttendeesController@add']);
+
+Route::delete('/talk/delete', ['uses' => 'TalksController@delete']);
+
