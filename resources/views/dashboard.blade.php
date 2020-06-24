@@ -1,5 +1,5 @@
 <a href="/logout">logout</a>
-@if (count($talks > 0))
+@if (count($talks) > 0)
 @foreach ($talks as $talk)
 <form method="post" action="/talk/attendee/add">
     <input type="hidden" name="attendee_id" value="{{session()->get('user_id')}}" required/>
