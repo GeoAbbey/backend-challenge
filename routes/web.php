@@ -30,3 +30,10 @@ Route::delete('/talk/delete/{talk_id}', ['uses' => 'TalksController@delete']); /
 //show register page
 Route::get('/register', ['uses' => 'RegisterController@show']);
 
+//handles login
+Route::post('/login', ['uses' => 'LoginController@logUserIn']);
+//logout
+Route::get('/logout', ['uses' => 'LoginController@logout']);
+
+Route::get('/dashboard', ['uses' => 'DashboardController@index']);
+
