@@ -16,7 +16,7 @@
 
         methods : {
             async getConferences () {
-                let response = await axios.get('/api/conferences')
+                let response = await axios.get('/api/conferences', )
                 this.conferences = response.data.data
             }
         },

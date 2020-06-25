@@ -67,28 +67,6 @@
                         phone_number : '',
                         address : ''
                 };
-            },
-
-            handleError (error) {
-                if (error.response.data) {
-                    if (typeof error.response.data === 'string') {
-                        return alert(error.response.data);
-                    }
-                    if (error.response.status === 422) {
-                        let errors = [];
-                        console.log(error.response.data.errors)
-                        for (var key in error.response.data.errors) {
-                            error.response.data.errors[key].forEach(element => {
-                                errors.push(`${key}: ${element}`);
-                            });
-                        }
-                        return alert(errors.join("\n"));
-                    }
-                    if (error.response.status === 418 && error.response.data.message) {
-                        return alert(error.response.data);
-                    }
-                }
-                return alert('We could not handle your request');
             }
         }
     }

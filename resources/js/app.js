@@ -8,6 +8,10 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+import Vuex from 'Vuex';
+
+Vue.use(Vuex);
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -26,6 +30,56 @@ files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+Vue.mixin({
+    data () {
+        return {
+            carts : [],
+            encrypted: false,
+            encryptsecret: 'dogpound_by_ridwan_123456789.',
+            decryptsecret: 'dogpound_by_ridwan_123456789.'
+        }
+    },
+    methods: {
+        getAttendee : function () {
+            return window.localStorage.getItem('attendee') != null ? JSON.parse(window.localStorage.getItem('attendee')) : []
+        },
+        getAttendeeToken : function() {
+            return window.localStorage.getItem('attendeeToken') != null ? JSON.parse(window.localStorage.getItem('attendeeToken')) : ''
+        },
+        clearLocalStorage : function () {
+            return window.localStorage.getItem('carts') != null ? window.localStorage.clear() : []
+        },
+        removeItemFromStorage : function (key) {
+            return window.localStorage.getItem(key) != null ? window.localStorage.removeItem(key) : ''
+        },
+        isAttendeeLoggedIn : function() {
+            return !!this.getAttendeeToken()
+        },
+        handleError (error) {
+            if (error.response.data) {
+                if (typeof error.response.data === 'string') {
+                    return alert(error.response.data);
+                }
+                if (error.response.status === 422) {
+                    let errors = [];
+                    console.log(error.response.data.errors)
+                    for (var key in error.response.data.errors) {
+                        error.response.data.errors[key].forEach(element => {
+                            errors.push(`${key}: ${element}`);
+                        });
+                    }
+                    return alert(errors.join("\n"));
+                }
+                if (error.response.status === 418 && error.response.data.message) {
+                    return alert(error.response.data);
+                }
+            }
+            return alert('We could not handle your request');
+        }
+    }
+})
+
+
 const app = new Vue({
-    el: '#app',
+    el: '#app'
 });
