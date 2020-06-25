@@ -21,3 +21,5 @@ Route::group(['prefix' => 'auth'], function() {
     Route::get('/register', 'Web\Auth\RegisterController@show')->name('register');
     Route::get('/login', 'Web\Auth\LoginController@show')->name('login');
 });
+
+Route::get('/attendees/dashboard', 'Web\Dashboard\Attendee\DashboardController@dashboard');

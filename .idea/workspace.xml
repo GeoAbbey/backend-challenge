@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08dad5a0-a6e5-462b-bafb-aaa2c05e4dec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/components/nav/AppNavBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/dashboard/AppAttendeeDashboard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/attendee/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Api/Ticket/TicketResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Api/Ticket/TicketResource.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/auth/AppLogin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/auth/AppLogin.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/auth/AppRegister.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/auth/AppRegister.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/conference/AppConference.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/conference/AppConference.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/conference/AppConferenceDetails.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/conference/AppConferenceDetails.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/nav/AppNavBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/nav/AppNavBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,26 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/components/auth/AppRegister.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/auth/AppLogin.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="49" column="17" selection-start-line="43" selection-start-column="53" selection-end-line="49" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/conference/AppConference.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+            <state relative-caret-position="218">
+              <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -55,17 +35,50 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/components/conference/AppConferenceDetails.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="20" selection-start-line="19" selection-end-line="20" />
+            <state relative-caret-position="74">
+              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="40" />
+              <folding>
+                <element signature="e#733#758#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/conference/AppConferenceSingle.vue">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="49" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="49" />
+            <state relative-caret-position="222">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/dashboard/attendee/dashboard.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/js/components/dashboard/AppAttendeeDashboard.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/js/components/talks/AppTalks.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,35 +86,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="52" column="71" selection-start-line="52" selection-start-column="71" selection-end-line="52" selection-end-column="71" />
+            <state relative-caret-position="902">
+              <caret line="79" column="55" selection-start-line="79" selection-start-column="55" selection-end-line="79" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Resources/Api/Ticket/TicketResource.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/components/nav/AppNavBar.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layout.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/conference/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="126">
+              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -111,6 +124,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>passp</find>
+      <find>response</find>
+      <find>tickets</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -125,10 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Requests/Api/Attendee/StoreRequest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
-        <option value="$PROJECT_DIR$/app/Custom/ApiTokenCookieFactory.php" />
-        <option value="$PROJECT_DIR$/app/Providers/ApiTokenCookieFactory.php" />
         <option value="$PROJECT_DIR$/app/Providers/TokenCookieFactory.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
@@ -142,7 +153,6 @@
         <option value="$PROJECT_DIR$/app/Models/Talk.php" />
         <option value="$PROJECT_DIR$/app/Libraries/Utilities.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Conference/TicketController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/Api/Ticket/TicketResource.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Me/MeController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Auth/LoginController.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
@@ -160,10 +170,8 @@
         <option value="$PROJECT_DIR$/resources/js/components/conference/AppConferenceSingle.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/talks/AppTalks.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/speakers/AppSpeakers.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/conference/AppConferenceDetails.vue" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Web/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Web/Auth/LoginController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/store/attendee.js" />
@@ -173,9 +181,16 @@
         <option value="$PROJECT_DIR$/resources/js/components/auth/AppLogin.vue" />
         <option value="$PROJECT_DIR$/resources/views/nav/nav.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layout.blade.php" />
-        <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/resources/js/components/conference/AppConference.vue" />
+        <option value="$PROJECT_DIR$/resources/js/components/conference/AppConferenceDetails.vue" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Web/Dashboard/Attendee/DashboardController.php" />
+        <option value="$PROJECT_DIR$/resources/js/components/dashboard/AppAttendeeDashboard" />
         <option value="$PROJECT_DIR$/resources/js/components/nav/AppNavBar.vue" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/dashboard/attendee/dashboard.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/Api/Ticket/TicketResource.php" />
+        <option value="$PROJECT_DIR$/resources/js/app.js" />
+        <option value="$PROJECT_DIR$/resources/js/components/dashboard/AppAttendeeDashboard.vue" />
       </list>
     </option>
   </component>
@@ -351,6 +366,15 @@
             <path>
               <item name="conference-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="conference-app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Web" type="462c0819:PsiDirectoryNode" />
+              <item name="Dashboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="conference-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="conference-app" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -372,28 +396,28 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="conference-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="conference-app" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="nav" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="conference-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="conference-app" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="conference-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="conference-app" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="conference" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="conference-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="conference-app" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="conference-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="conference-app" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="conference-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="conference-app" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="attendee" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -402,7 +426,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Me&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Http/Controllers/Api/Attendee/MeController.php&#10;MeC&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Http/Controllers/Api/Attendee/MeController.php&#10;api&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/routes/api.php&#10;web&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/routes/web.php&#10;api.php&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/routes/api.php&#10;Logi&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Http/Controllers/Api/Auth/LoginController.php&#10;Talk&#9;null&#9;null&#10;Ticket&#9;null&#9;null&#10;Login&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Http/Controllers/Api/Auth/LoginController.php&#10;AuthSe&#9;null&#9;null&#10;Attend&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Models/Attendee.php&#10;User&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Models/User.php&#10;Atten&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Models/Attendee.php&#10;Attendee&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Models/Attendee.php&#10;Speaker&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Models/Speaker.php&#10;Confere&#9;null&#9;null&#10;AuthSer&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="Ticket&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Http/Resources/Api/Ticket/TicketResource.php&#10;api&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/routes/api.php&#10;web&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/routes/web.php&#10;TicketRe&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Http/Resources/Api/Ticket/TicketResource.php&#10;api.php&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/routes/api.php&#10;Me&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Http/Controllers/Api/Attendee/MeController.php&#10;MeC&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Http/Controllers/Api/Attendee/MeController.php&#10;Logi&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Http/Controllers/Api/Auth/LoginController.php&#10;Talk&#9;null&#9;null&#10;Login&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Http/Controllers/Api/Auth/LoginController.php&#10;AuthSe&#9;null&#9;null&#10;Attend&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Models/Attendee.php&#10;User&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Models/User.php&#10;Atten&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Models/Attendee.php&#10;Attendee&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Models/Attendee.php&#10;Speaker&#9;FILE&#9;file:///Users/ridwan/Sites/intelligent-innovations/conference-app/app/Models/Speaker.php&#10;Confere&#9;null&#9;null&#10;AuthSer&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -442,17 +466,18 @@
       <updated>1592865891473</updated>
       <workItem from="1592865892694" duration="33015000" />
       <workItem from="1592999731672" duration="10343000" />
-      <workItem from="1593048280721" duration="12746000" />
+      <workItem from="1593048280721" duration="17145000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56104000" />
+    <option name="totallyTimeSpent" value="60503000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="852" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49932158" visible="true" weight="0.1788269" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49932158" visible="true" weight="0.1788269" />
       <window_info id="Structure" order="1" sideWeight="0.5006784" side_tool="true" weight="0.15307583" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -467,7 +492,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32971507" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32971507" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -481,28 +506,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/passport/src/HasApiTokens.php" />
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
@@ -543,13 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Api/Ticket/TicketResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="119" selection-start-line="22" selection-start-column="119" selection-end-line="22" selection-end-column="119" />
         </state>
       </provider>
     </entry>
@@ -666,23 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/speakers/AppSpeakers.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/talks/AppTalks.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Web/Auth/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -711,20 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-113">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/store/admin.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -749,27 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/conference/AppConferenceSingle.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="49" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/auth/AppRegister.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/conference/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/nav/nav.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -780,17 +724,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/conference/AppConferenceDetails.vue">
+    <entry file="file://$PROJECT_DIR$/resources/js/components/auth/AppLogin.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="20" selection-start-line="19" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="52" column="71" selection-start-line="52" selection-start-column="71" selection-end-line="52" selection-end-column="71" />
+        <state relative-caret-position="366">
+          <caret line="49" column="17" selection-start-line="43" selection-start-column="53" selection-end-line="49" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -801,17 +738,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/auth/AppLogin.vue">
+    <entry file="file://$PROJECT_DIR$/resources/js/components/conference/AppConferenceSingle.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="49" column="17" selection-start-line="43" selection-start-column="53" selection-end-line="49" selection-end-column="17" />
+        <state relative-caret-position="30">
+          <caret line="2" column="49" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/conference/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/nav/AppNavBar.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+        <state relative-caret-position="126">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/auth/AppRegister.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Web/Dashboard/Attendee/DashboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Api/Ticket/TicketResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/speakers/AppSpeakers.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="53190" column="4" selection-start-line="53190" selection-start-column="4" selection-end-line="53190" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="79" column="55" selection-start-line="79" selection-start-column="55" selection-end-line="79" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/talks/AppTalks.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dashboard/attendee/dashboard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/conference/AppConferenceDetails.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="40" />
+          <folding>
+            <element signature="e#733#758#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/dashboard/AppAttendeeDashboard.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>

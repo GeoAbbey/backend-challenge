@@ -5,7 +5,7 @@
                 <a class="nav-link" :href="'/'">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active" v-if="isAttendeeLoggedIn()">
-                <a class="nav-link" href="">{{attendee.first_name}}</a>
+                <a class="nav-link" :href="'/attendees/dashboard'">{{attendee.first_name}}</a>
             </li>
             <li class="nav-item active" v-else>
                 <a class="nav-link" :href="'/auth/register'">Register</a>

@@ -73,6 +73,12 @@ Vue.mixin({
                 if (error.response.status === 418 && error.response.data.message) {
                     return alert(error.response.data);
                 }
+
+                if (error.response.status === 401) {
+                    this.removeItemFromStorage('attendeeToken')
+                    this.removeItemFromStorage('attendee')
+                    window.location.href = '/auth/login'
+                }
             }
             return alert('We could not handle your request');
         }

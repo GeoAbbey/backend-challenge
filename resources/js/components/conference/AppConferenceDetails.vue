@@ -13,7 +13,7 @@
         <p>Start Date : {{conference.start_date}}</p>
         <p>End Date : {{conference.end_date}}</p>
         <p>Address : {{conference.address}}</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Buy Ticker</a>
+        <a class="btn btn-primary btn-lg" @click="buyTicket" role="button">Buy Ticker</a>
     </div>
 </template>
 <script>
@@ -24,7 +24,8 @@
         data () {
             return {
                 conference : {},
-                talks : []
+                talks : [],
+                token : ''
             }
         },
 
@@ -40,11 +41,43 @@
                 let response = await axios(`/api/conferences/${this.id}`)
                 this.conference = response.data.data
                 this.talks = response.data.talks
+            },
+
+            formData () {
+                var talkIds = {'talks' : []};
+                this.talks.forEach(function(talk) {
+                    talkIds.talks.push({
+                        'id' : talk.id
+                    })
+                })
+                return talkIds
+            },
+
+            async buyTicket() {
+                if(this.isAttendeeLoggedIn()) {
+                    var self = this
+                    await axios.post(`/api/conferences/${this.conference.id}/tickets`, self.formData(), {
+                        headers : {
+                            'Accept' : 'application/json',
+                            'Content-Type' : 'application/json',
+                            'Authorization' : 'Bearer ' + self.token
+                        }
+                    }).then(response => {
+                        alert('Your attendance have been booked successfully')
+                    }).catch(error => {
+                        this.handleError(error)
+                    });
+                }else {
+                    alert('Please login before you can book a conference')
+                    return
+                }
+
             }
         },
 
         mounted() {
-            this.getConferenceDetails()
+            this.getConferenceDetails(),
+            this.token = this.getAttendeeToken()
         }
     }
 </script>
