@@ -29,6 +29,7 @@ class StoreRequest extends FormRequest
             'address' => 'required',
             'start_date' => 'required|date|date_format:Y-m-d|after:yesterday',
             'end_date' => 'required|date|date_format:Y-m-d|after:start_at',
+            'description' => 'required',
             'talks' => 'required|array',
             'talks.*.title' => 'required',
             'talks.*.address' => 'required',

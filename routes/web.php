@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'Web\Conference\ConferenceController@index')->name('home');
+
+Route::get('/conferences/{id}', 'Web\Conference\ConferenceController@show');
+
+Route::group(['prefix' => 'auth'], function() {
+    Route::get('/register', 'Web\Auth\RegisterController@show')->name('register');
+    Route::get('/login', 'Web\Auth\LoginController@show')->name('login');
 });

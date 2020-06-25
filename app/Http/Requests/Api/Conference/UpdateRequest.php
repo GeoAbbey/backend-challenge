@@ -29,6 +29,7 @@ class UpdateRequest extends FormRequest
             'address' => 'sometimes|required',
             'start_date' => 'sometimes|required|date|date_format:Y-m-d',
             'end_date' => 'sometimes|required|date|date_format:Y-m-d|after:start_at',
+            'description' => 'sometimes|required',
             'talks' => 'sometimes|required|array',
             'talks.*.title' => 'sometimes|required',
             'talks.*.address' => 'sometimes|required',

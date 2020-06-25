@@ -18,7 +18,9 @@ class ConferenceResouce extends JsonResource
             'id' => $this->id,
             'theme' => $this->theme,
             'start_date' => $this->start_date,
-            'end_date' => $this->end_date
+            'end_date' => $this->end_date,
+            'description' => $this->description,
+            'address' => $this->address
         ];
     }
 }

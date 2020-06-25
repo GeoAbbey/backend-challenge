@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class UpdateService
 {
-    const UPDATE_FIELDS = ['theme', 'address', 'start_date', 'end_date'];
+    const UPDATE_FIELDS = ['theme', 'address', 'start_date', 'end_date', 'description'];
     protected $conference;
     protected $data;
 
