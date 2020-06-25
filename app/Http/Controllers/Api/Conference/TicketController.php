@@ -24,7 +24,8 @@ class TicketController extends Controller
     public function lists()
     {
         $attendee = auth('attendee')->user();
-        return TicketResource::collection($attendee->tickets);
+        $tickets = Ticket::where('attendee_id', $attendee->id)->orderBy('created_at', 'desc')->get();
+        return TicketResource::collection($tickets);
     }
 
     /**

@@ -64,6 +64,7 @@
                         }
                     }).then(response => {
                         alert('Your attendance have been booked successfully')
+                        window.location.href = '/attendees/dashboard'
                     }).catch(error => {
                         this.handleError(error)
                     });

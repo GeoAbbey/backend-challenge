@@ -12,6 +12,7 @@
             <div :id="'collapse'+ticket.ticket_number" class="collapse" :class="{'show' : index === 0}" :aria-labelledby="'heading'+ticket.ticket_number" data-parent="#accordionExample1">
                 <div class="card-body">
                     <h6>{{ticket.conference.theme}}</h6>
+                    <h7>Date Purchased {{ticket.date}}</h7>
                     <p>{{ticket.conference.description}}</p>
                 </div>
 

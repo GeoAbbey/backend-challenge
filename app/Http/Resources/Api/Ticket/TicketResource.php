@@ -21,7 +21,8 @@ class TicketResource extends JsonResource
             'ticket_number' => $this->ticket_number,
             'conference' => new ConferenceResouce($this->conference),
             'talks' => TalkResource::collection($this->attendee->talks->where('conference_id', $this->conference->id)),
-            'attendee' => new AttendeeResource($this->attendee)
+            'attendee' => new AttendeeResource($this->attendee),
+            'date' => date('Y-m-d', strtotime($this->created_at))
         ];
     }
 }
