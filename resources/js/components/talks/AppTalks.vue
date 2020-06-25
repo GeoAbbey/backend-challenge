@@ -15,6 +15,7 @@
                 <p>Start Time : {{talk.start_time}}</p>
                 <p>End Time : {{talk.end_time}}</p>
             </div>
+            <p><b>Speakers</b></p>
             <div class="card mb-3 ml-2" style="max-width: 540px;" v-for="speaker in talk.speakers" :key="speaker.id">
                 <app-speakers :speaker="speaker" />
             </div>
